@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(18, 9, 2);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+hr{
+  width: 85%;
+  border-top: 2px solid rgb(55, 54, 54)!important;
+}
+.tasks-container {
+  margin-top: 6em;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  div{
+    border-radius: 10px;
+  }
+  .form-floating{
+    margin-bottom: 0!important;
+  }
+}
+
+.task {
+  background-color: rgb(184, 199, 212);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  padding-top: 4em;
+}
+
+.first-container {
+  .input-field-div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .form-floating {
+      margin-bottom: 0 !important;
+    }
+    .add-output-btn {
+      height: 3em;
+      width: 3em;
+    }
+    .outputs {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      width: 30em;
+    }
+  }
+  
+  .counter-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    .countX2 {
+      font-size: 2em;
+    }
+  }
+  
+  .colors-div {
+    
+    .pick-color-field{
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+      .pisk-color-btn{
+        width: 3em;
+        height: 3em
+      }
+    }
+    .color-select {
+      width: 7em;
+      margin-bottom: 0!important;
+      
+    }
+  }
+  
+  .color-square {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .disabled {
+    background-color: red !important;
+  }
+  
+  .squares {
+    padding: 1em 0 2em;
+    width: 440px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px;
+  }
+  
+}
+
+.second-container{
+  .second-task-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .counter-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    button {
+      width: fit-content;
+      place-self: center;
+    }
+  }
+
+}
